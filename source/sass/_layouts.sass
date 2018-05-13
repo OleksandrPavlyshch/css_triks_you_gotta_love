@@ -1,0 +1,60 @@
+// default layout
+
+.clearfix
+	*zoom: 1
+
+.clearfix:before,
+.clearfix:after
+	display: table
+	content: ""
+	line-height: 0
+
+.clearfix:after
+	clear: both
+
+a,
+a:before,
+.button,
+button,
+button:before,
+input[type="button"],
+input[type="submit"]
+	transition: border-color .1s ease-in, color .1s ease-in, background-color .1s ease-in
+
+
+=grid($columns-amount: 12, $col-padding: 5, $column-name: "col-")
+	@for $i from 1 through $columns-amount
+		%#{$column-name}-#{$i}
+			width: (100%/$columns-amount)*$i
+			float: left
+			box-sizing: border-box
+			display: block
+			padding-left: $col-padding
+			padding-right: $col-padding
+			min-height: 1px
+			// &:first-child
+			// 	padding-left: 0
+		%#{$column-name}-offset-#{$i}
+			margin-left: (100%/$columns-amount)*$i
+
+
+// +max-screen($tablet)
+	// +grid($column-name: "col-md", $col-padding: 0)
+
++max-screen($tablet)
+	%block
+		width: auto
+		float: none
+		padding-left: 0
+		padding-right: 0
+	%offset
+		margin-left: 0
+	@for $i from 1 through 12
+		%col-#{$i}
+			@extend %block
+		%col-offset-#{$i}
+			@extend %offset
+
+
+.hide
+	display: none !important
