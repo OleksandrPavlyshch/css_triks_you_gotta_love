@@ -1,10 +1,160 @@
-
 body
-	font-family: Arial, sans-serif
+	font-family: roboto, Arial, sans-serif
 	font-size: 16px
 	line-height: 1.25
 	min-width: 320px
 	min-height: 320px
+	color: #ffffff
+	height: auto
+
+body,
+html
+	height: auto
+
+.slide
+	background-color: #000000
+	h2
+		color: #ffffff
+	&.white
+		background-color: #ffffff
+
+.green_code_mark
+	color: #718c00
+.shower
+	color: #ffffff
+
+.centr-align
+	text-align: center
+
+.default_link
+	background: none !important
+	&:hover
+		text-decoration: underline
+
+.half
+	display: inline-block
+	vertical-align: middle
+	text-align: left
+	width: 50%
+	padding: 15px
+	box-sizing: border-box
+
+.slide
+	padding: 50px 40px 0 50px
+	user-select: none
+	&:before
+		content: ''
+		position: absolute
+		z-index: 20
+		left: 0
+		top: 0
+		height: 100%
+		width: 15%
+	h2
+		font-size: 65px
+		font-weight: 900
+		margin-bottom: 40px
+	pre
+		margin-top: 25px
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: .5em
+		text-align: left
+		width: 100%
+		code
+			font-size: 30px
+			line-height: 1.6
+			margin-left: -50px
+			width: calc(100% + 175px + 112px)
+	p
+		font-size: 32px
+		line-height: 1.7
+	ul
+		font-size: 32px
+		line-height: 1.6
+
+.centr-code
+	text-align: center
+	line-height: 625px
+	padding-top: 0
+	pre
+		margin: 0
+	code
+		font-size: 30px !important
+
+=custom-header($img)
+	background: url("../img/" + $img) 50% 50% no-repeat
+	background-size: cover
+	.shout
+		padding: 0 50px
+		text-align: center
+
+		&:after
+			display: none
+	h2
+		font-size: 128px !important
+		text-shadow: 3px 4px 10px #000
 
 
-// common blocks
+.cover-frame
+	left: 0
+	top: 0
+	right: 0
+	bottom: 0
+	// margin: auto
+	width: 100%
+	height: 100%
+	position: absolute
+
+.overflow-visible
+	overflow: visible
+
+.slide::after
+	left: 20px !important
+	bottom: 20px !important
+	font-size: 16px
+	line-height: 1
+
+.contacts
+	padding-left: 30px
+	p
+		margin-bottom: 0
+		font-size: 36px
+
+.twitter_link
+	position: relative
+	margin-left: 60px
+	color: #1da1f2 !important
+	background: none !important
+	font-size: 50px
+	&:hover
+		background: linear-gradient(to top,currentColor .09em,transparent .09em) repeat-x !important
+	&:before
+		content: ""
+		position: absolute
+		right: 100% 
+		margin-left: -10px
+		top: 5px
+		vertical-align: middle
+		width: 50px
+		height: 50px
+		background: url("../img/Twitter-logo.svg") 50% 50% no-repeat
+		background-size: 50px 50px
+
+.slide blockquote::before
+	font-size: 4em
+
+.link-slide
+	padding: 30px 30px 0
+	text-align: center
+	// font-size: 60px
+	&_header
+		font-size: 73px !important
+		line-height: 1.3 !important
+		font-weight: 700 !important
+		padding-left: 30px
+	&_link
+		font-size: 65px !important
+		background: none !important
+		&:hover
+			text-decoration: underline

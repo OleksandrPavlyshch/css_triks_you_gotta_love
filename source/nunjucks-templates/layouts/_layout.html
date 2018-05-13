@@ -1,6 +1,6 @@
 {% import "nunjucks-templates/partials/_mixins.html" as mixins %}
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
@@ -12,20 +12,30 @@
     <!-- endbower -->
     {% include "../partials/_media-tags.html" %}
     {% include "../partials/_favicons.html" %}
+
+    <link rel="stylesheet" media="all" href="css/vendor/screen-16x10.css">
+    <link rel="stylesheet" media="all" href="css/vendor/default.css">
     <link rel="stylesheet" media="all" href="css/screen.css">
   </head>
-  <body>
+  <body class="shower list">
 
     <!-- BEGIN content -->
-    <main class="content">
-        {% block content %}{% endblock %}
-    </main>
+    {% block content %}{% endblock %}
     <!-- END content -->
+
+
+
+    <div class="progress"></div>
+    <p class="badge">
+        <a href="https://github.com/OleksandrPavlyshch">Fork me on GitHub</a>
+    </p>
 
     <!-- BEGIN scripts -->
     <!-- bower:js -->
     <script src="js/vendor/jquery.js"></script>
     <!-- endbower -->
+    <script type="text/javascript" src="js/vendor/shower.min.js"></script>
+    <script type="text/javascript" src="js/vendor/highlight.pack.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
 

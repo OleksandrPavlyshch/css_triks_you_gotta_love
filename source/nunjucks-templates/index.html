@@ -5,5 +5,14 @@ title: Main page
 {% extends "nunjucks-templates/layouts/_layout.html" %}
 
 {% block content %}
+	{% include "elements/header/index.html" %}
+
+	{% include "elements/selectors/index.html" %}
+	{% include "elements/block_aspect_ratio/index.html" %}
+	{% include "elements/shadows/index.html" %}
+	{% include "elements/filter_shadow/index.html" %}
+	{% include "elements/browser_behavior/index.html" %}
+	{% include "elements/parallax/index.html" %}
+	{% include "elements/calc/index.html" %}
 
 {% endblock %}
