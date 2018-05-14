@@ -11,17 +11,25 @@ body,
 html
 	height: auto
 
-.slide
-	background-color: #000000
-	h2
-		color: #ffffff
-	&.white
-		background-color: #ffffff
 
-.green_code_mark
-	color: #718c00
-.shower
-	color: #ffffff
+.device-reseze-frame
+	overflow: hidden
+	border: 1px solid #000
+	height: calc(100% - 50px)
+	resize: horizontal
+	position: relative
+	margin: 0 auto
+	border-color: $dark-gray
+	border-width: 25px 25px 50px
+	border-style: solid
+	border-radius: 15px
+	min-width: 280px
+	max-width: 884px
+
+// .green_code_mark
+// 	color: #718c00
+// .shower
+// 	color: #ffffff
 
 .centr-align
 	text-align: center
