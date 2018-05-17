@@ -12,19 +12,47 @@ html
 	height: auto
 
 
-.device-reseze-frame
-	overflow: hidden
+.device_resize_frame
 	border: 1px solid #000
-	height: calc(100% - 50px)
-	resize: horizontal
+	height: 100%
+	display: inline-block
 	position: relative
 	margin: 0 auto
 	border-color: $dark-gray
-	border-width: 25px 25px 50px
+	border-width: 20px 20px 40px
 	border-style: solid
 	border-radius: 15px
-	min-width: 280px
-	max-width: 884px
+	&:after
+		content: ''
+		left: 0
+		right: 0
+		position: absolute
+		bottom: -31px
+		margin: auto
+		width: 24px
+		height: 24px
+		border-radius: 50%
+		background-color: #333
+		border: solid 2px #444
+	&-content
+		overflow: hidden
+		min-width: 270px
+		height: 100%
+		resize: horizontal
+		max-width: 870px
+		width: 870px
+		position: relative
+		&:after
+			content: "" 
+			+arr(9, 9, #444, br)
+			position: absolute
+			bottom: -1px
+			right: -1px
+			pointer-events: none
+			touch-action: none
+	&-wrap
+		text-align: center
+		height: calc(100% - 40px)
 
 
 .centr-align
@@ -44,7 +72,7 @@ html
 	box-sizing: border-box
 
 .slide
-	padding: 50px 40px 0 50px
+	padding: 40px 40px 0
 	user-select: none
 	&:before
 		content: ''
@@ -53,7 +81,7 @@ html
 		left: 0
 		top: 0
 		height: 100%
-		width: 15%
+		width: 40px
 	h2
 		font-size: 65px
 		margin-bottom: 40px
