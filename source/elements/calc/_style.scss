@@ -1,0 +1,11 @@
+.css_lock {
+	height: 100vh;
+	text-align: left;
+	padding: 20px;
+	&-exmp_1 {
+		display: inline-block;
+		min-width: 50%;
+		max-width: 100%;
+		width: calc((600px - 100%) * 600);
+	}
+}
