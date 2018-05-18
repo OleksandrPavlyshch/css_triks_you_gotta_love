@@ -3,24 +3,51 @@
 </section>
 
 <section class="slide">
-	<h2>& + &</h2>
+	<h2>Adjacent sibling combinator & + &</h2>
 	<pre>
-		<code>checkboks:checked + label {</code>
-		<code>	background-color: red;</code>
-		<code>}</code>
 		<code>li + li {</code>
 		<code>	border-left: 1px solid #000;</code>
+		<code>}</code>
+		<code>checkboks:checked + label {</code>
+		<code>	background-color: red;</code>
 		<code>}</code>
 	</pre>
 </section>
 
-
 <section class="slide">
-	<iframe class="cover-frame" src="https://codepen.io/cobra_winfrey/full/BJwpLO/"></iframe>
+	<h2>Menu</h2>
+	<nav class="selectors_nav">
+		<ul class="reset_list">
+			<li>Item 1</li>
+			<li>Item 2</li>
+			<li>Item 3</li>
+			<li>Item 4</li>
+			<li>Item 5</li>
+		</ul>
+
+	</nav>
+	<br>
+
+	<h2>Checkboxes</h2>
+
+	<div class="adjacent-checkboxes">
+		<input id="selectors1-1" type="checkbox" checked="checked" tabindex="0">
+		<label for="selectors1-1">First checkbox
+			<div class="input_custom-indicator"></div>
+		</label>
+		<br>
+		<br>
+		<input id="selectors1-2" type="checkbox" tabindex="0">
+		<label for="selectors1-2">Second checkbox
+			<div class="input_custom-indicator"></div>
+		</label>
+	</div>
+
 </section>
 
+
 <section class="slide">
-	<h2>& ~ &</h2>
+	<h2>Adjacent sibling combinator & ~ &</h2>
 	<pre>
 		<code>checkboks:checked ~ .span1 {</code>
 		<code>	background-color: red;</code>
@@ -29,4 +56,8 @@
 		<code>	background-color: blue;</code>
 		<code>}</code>
 	</pre>
+</section>
+
+<section class="slide">
+	<iframe class="cover-frame" src="https://codepen.io/cobra_winfrey/full/BJwpLO/"></iframe>
 </section>
