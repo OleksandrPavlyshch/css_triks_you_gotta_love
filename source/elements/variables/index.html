@@ -10,8 +10,8 @@
 		<code>}</code>
 		<code>	</code>
 		<code>$('body').on('mousemove', '.button', (e) => {</code>
-		<code>	const x = e.pageX - e.target.offsetLeft;</code>
-		<code>	const y = e.pageY - e.target.offsetTop;</code>
+		<code>	let x = e.pageX - e.target.offsetLeft;</code>
+		<code>	let y = e.pageY - e.target.offsetTop;</code>
 		<code>	$(e.target).css({'--x': x+'px', '--y': y+'px' });</code>
 		<code>});</code>
 	</pre>
