@@ -3,12 +3,16 @@
 </section>
 
 <section class="slide">
-	
-	<h2></h2>
 	<pre>
 		<code>@supports (display: flex) {</code>
 		<code>	.block {</code>
 		<code>		display: flex;</code>
+		<code>	}</code>
+		<code>}</code>
+		<code>@supports (display: grid) and </code>
+		<code>(not (display: inline-grid)) {</code>
+		<code>	.block {</code>
+		<code>		display: grid;</code>
 		<code>	}</code>
 		<code>}</code>
 	</pre>
