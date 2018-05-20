@@ -1,10 +1,14 @@
 .shadow_demo
+	h3
+		line-height: 1
+		font-weight: 700
+		margin-bottom: 25px
 	&-box_shadow
-		box-shadow: 0 3px 17px 3px $charcoal
+		box-shadow: 0 2px 17px 3px $charcoal
 	&-filter_shadow
 		filter: drop-shadow(0px 2px 10px $charcoal)
 	&-image_box_shadow
-		box-shadow: 0	0 16px 10px $dark-gray
+		box-shadow: 0 0 16px 10px $dark-gray
 	&-image_filter_shadow
 		filter: drop-shadow(19px -6px 4px $dark-gray);
 	&-tooltip
@@ -14,13 +18,14 @@
 		background-color: $white
 		position: relative
 		text-align: center
-		margin: 15px auto 50px
+		margin: 0 auto 50px
 		&:after
 			content: ''
-			+arr(45, 25, $white, b)
+			+arr(44, 25, $white, b)
 			position: absolute
 			top: 98%
-			left: 35px
+			left: 50%
+			margin-left: -22px
 	&-image
 		display: block
 		max-width: 60%
