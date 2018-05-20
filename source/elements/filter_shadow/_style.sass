@@ -1,0 +1,28 @@
+.shadow_demo
+	&-box_shadow
+		box-shadow: 0 3px 17px 3px $charcoal
+	&-filter_shadow
+		filter: drop-shadow(0px 2px 10px $charcoal)
+	&-image_box_shadow
+		box-shadow: 0	0 16px 10px $dark-gray
+	&-image_filter_shadow
+		filter: drop-shadow(19px -6px 4px $dark-gray);
+	&-tooltip
+		width: 70%
+		padding: 20px 15px
+		border-radius: 25px
+		background-color: $white
+		position: relative
+		text-align: center
+		margin: 15px auto 50px
+		&:after
+			content: ''
+			+arr(45, 25, $white, b)
+			position: absolute
+			top: 98%
+			left: 35px
+	&-image
+		display: block
+		max-width: 60%
+		margin: 0 auto
+		max-height: 40%
