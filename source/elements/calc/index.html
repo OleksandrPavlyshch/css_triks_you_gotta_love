@@ -13,6 +13,7 @@
 
 <section class="slide">
 	<h2>Query block width with calc()</h2>
+	<br>
 	<pre>
 		<code>.block {</code>
 		<code>	display: inline-block;</code>
@@ -24,14 +25,31 @@
 </section>
 
 <section class="slide">
-	<h2>Outlook hack</h2>
+	<br>
+	<br>
 	<pre>
+		<code>/* When parent is 500px wide... */</code>
+		<code></code>
 		<code>.block {</code>
-		<code>	width: calc(360000px - 60000%);</code>
+		<code>	min-width: 50%;   /* 250px WINNER */</code>
+		<code>	max-width: 100%;  /* 500px */</code>
+		<code>	width: calc(480px - 100%) * 480); /* -9600px */</code>
 		<code>}</code>
 	</pre>
 </section>
 
+<section class="slide">
+	<br>
+	<br>
+	<pre>
+		<code>/* When parent is 400px wide... */</code>
+		<code>.block {</code>
+		<code>	min-width: 50%;  /* 200px */</code>
+		<code>	max-width: 100%; /* 400px WINNER */</code>
+		<code>	width: calc(480px - 100%) * 480); /* 38400px */</code>
+		<code>}</code>
+	</pre>
+</section>
 
 <section class="slide">
 	<div class="device_resize_frame-wrap">
@@ -42,4 +60,15 @@
 			</div>
 		</div>
 	</div>
+</section>
+
+
+
+<section class="slide">
+	<h2>Outlook hack</h2>
+	<pre>
+		<code>.block {</code>
+		<code>	width: calc(360000px - 60000%);</code>
+		<code>}</code>
+	</pre>
 </section>

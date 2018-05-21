@@ -28,10 +28,10 @@
 			&:before {
 				content: "";
 				position: absolute;
-				left: calc(var(--x) - 800px / 2);
-				top: calc(var(--y) - 800px / 2);
-				width: 800px;
-				height: 800px;
+				left: calc(var(--x) - 600px / 2);
+				top: calc(var(--y) - 600px / 2);
+				width: 600px;
+				height: 600px;
 				transform: scale(0);
 				background: radial-gradient(circle closest-side, #ff1ac6,transparent);
 				opacity: 0;
