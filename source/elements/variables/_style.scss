@@ -11,6 +11,7 @@
 	&-menu {
 		border: 1px solid hsla(0,0%,100%,.7);
 		border-radius: 5px;
+		width: 90%;
 		li {
 			position: relative;
 			font-size: 22px;
@@ -55,7 +56,8 @@
 	position: relative;
 	appearance: none;
 	background: #f72359;
-	padding: 1em 3em;
+	padding: 1em;
+	width: 86%;
 	border: none;
 	color: white;
 	font-size: 1.6em;
