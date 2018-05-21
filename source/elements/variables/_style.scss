@@ -1,0 +1,88 @@
+.variable_demo {
+	height: 100vh;
+	background-color: $black;
+	&-1 {
+		text-align: center;
+		padding-top: 180px;
+	}
+	&-2 {
+		padding-top: 100px;
+		}
+	&-menu {
+		border: 1px solid hsla(0,0%,100%,.7);
+		border-radius: 5px;
+		li {
+			position: relative;
+			font-size: 22px;
+			color: hsla(0,0%,100%,.7);
+			display: flex;
+			align-items: center;
+			padding: 19px;
+			background-clip: padding-box;
+			box-shadow: 0 1px 0 rgba(240,240,255,.06);;
+			color: $white;
+			text-decoration: none;
+			overflow: hidden;
+			transition: background .4s ease;
+			&:before {
+				content: "";
+				position: absolute;
+				left: calc(var(--x) - 800px / 2);
+				top: calc(var(--y) - 800px / 2);
+				width: 800px;
+				height: 800px;
+				transform: scale(0);
+				background: radial-gradient(circle closest-side, #ff1ac6,transparent);
+				opacity: 0;
+				transition: transform .8s cubic-bezier(.22,1,.32,1), opacity .8s cubic-bezier(.22,1,.32,1)
+			}
+			&:hover:before {
+				transform: scale(1);
+				opacity: 1;
+			}
+			span {
+				position: relative;
+				pointer-events: none;
+			}
+		}
+		li + li {
+			border-top: 1px solid hsla(0,0%,100%,.7);
+		}
+	}
+		
+	}
+.variable_button {
+	position: relative;
+	appearance: none;
+	background: #f72359;
+	padding: 1em 3em;
+	border: none;
+	color: white;
+	font-size: 1.6em;
+	cursor: pointer;
+	outline: none;
+	overflow: hidden;
+	border-radius: 100px;
+	span {
+		position: relative;
+		pointer-events: none;
+	}
+	
+	&::before {
+		--size: 0;
+
+		content: '';
+		position: absolute;
+		left: var(--x);
+		top: var(--y);
+		width: var(--size);
+		height: var(--size);
+		background: radial-gradient(circle closest-side, #4405f7, transparent);
+		transform: translate(-50%, -50%);
+		transition: width .2s ease, height .2s ease;
+	}
+	
+	&:hover::before {
+		--size: 350px;
+	}
+}
