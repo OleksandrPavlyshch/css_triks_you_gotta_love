@@ -73,6 +73,18 @@ html {
   box-sizing: inherit;
 }
 
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-facebook {
+  font-size: 1.9rem;
+  width: 0.52632em;
+}
+
 body {
   font-family: roboto, Arial, sans-serif;
   font-size: 16px;
