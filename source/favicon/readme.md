@@ -1,1 +1,0 @@
-# Here put favicon icon

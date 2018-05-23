@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS Tricks You Gotta Love - YGLF</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fff">
+    <meta name="format-detection" content="telephone=no">
+    <!-- bower:css -->
+    <!-- endbower -->
+    <meta name="description" content="When you need to make a complex and beautiful UI, then you have to find new approaches. In practice, it turns out that complex things are very simple but sometimes not immediately obvious.">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@lokdawn80">
+    <meta name="twitter:title" content="CSS TRICKS YOU GOTTA LOVE">
+    <meta name="twitter:description" content="When you need to make a complex and beautiful UI, then you have to find new approaches. In practice, it turns out that complex things are very simple but sometimes not immediately obvious.">
+    <meta name="twitter:creator" content="@lokdawn80">
+    <meta name="twitter:url" content="https://oleksandrpavlyshch.github.io/css_triks_you_gotta_love/">
+    <meta name="twitter:image" content="">
+    <!-- Open Graph data -->
+    <meta property="og:title" content="CSS TRICKS YOU GOTTA LOVE">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://oleksandrpavlyshch.github.io/css_triks_you_gotta_love/">
+    <meta property="og:image" content="">
+    <meta property="og:description" content="When you need to make a complex and beautiful UI, then you have to find new approaches. In practice, it turns out that complex things are very simple but sometimes not immediately obvious.">
+    <meta property="og:site_name" content="">
+    <meta property="fb:admins" content="">
+    <link rel="apple-touch-icon" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon-180x180.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="css-tricks-you-gotta-love">
+    <link rel="icon" type="image/png" sizes="228x228" href="coast-228x228.png">
+    <link rel="yandex-tableau-widget" href="yandex-browser-manifest.json">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="manifest" href="manifest.json">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="transpatent">
+    <meta name="application-name" content="css-tricks-you-gotta-love">
+    <meta name="msapplication-TileColor" content="transpatent">
+    <meta name="msapplication-TileImage" content="mstile-144x144.png">
+    <meta name="msapplication-config" content="browserconfig.xml">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="apple-touch-startup-image-320x460.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-640x920.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-640x1096.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-750x1294.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="apple-touch-startup-image-1182x2208.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="apple-touch-startup-image-1242x2148.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="apple-touch-startup-image-748x1024.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="apple-touch-startup-image-768x1004.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-1496x2048.png">
+    <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="apple-touch-startup-image-1536x2008.png">
+    <link rel="stylesheet" media="all" href="css/vendor/screen-16x10.css">
+    <link rel="stylesheet" media="all" href="css/vendor/default.css">
+    <link rel="stylesheet" media="all" href="css/screen.css"> </head>
+  <body class="shower list">
+    <!-- BEGIN content -->
+    <header class="caption">
+      <h1>CSS Tricks You Gotta Love - YGLF</h1>
+      <p>
+        <a href="https://github.com/OleksandrPavlyshch">Oleksandr Pavlyshch – Front-end developer @ Astound Commerce.</a>
+      </p>
+    </header>
+    <section class="slide intro"> </section>
+    <section class="slide">
+      <h2 class="shout">Block
+        <br> Aspect
+        <br> Ratio</h2>
+    </section>
+    <section class="slide">
+      <div class="device_resize_frame-wrap">
+        <div class="device_resize_frame">
+          <div class="device_resize_frame-content">
+            <div class="aspect-ratio-square"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <h2>Save square aspect ratio</h2> <pre>
+		<code>.square {</code>
+		<code>	width: 50%;</code>
+		<code>	padding-top: 50%;</code>
+		<code>	height: 0;</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <h2 class="shout">@supports</h2>
+    </section>
+    <section class="slide"> <pre>
+		<code>@supports (display: flex) {</code>
+		<code>	.block {</code>
+		<code>		display: flex;</code>
+		<code>	}</code>
+		<code>}</code>
+		<code class="mark next">@supports (display: grid) and </code>
+		<code class="mark next">(not (display: inline-grid)) {</code>
+		<code>	.block {</code>
+		<code>		display: grid;</code>
+		<code>	}</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <h2 class="shout">Drop-shadow</h2>
+    </section>
+    <section class="slide shadow_demo">
+      <div class="half">
+        <h3>box-shadow</h3>
+        <div class="shadow_demo-tooltip shadow_demo-box_shadow"> Look at my shadow </div>
+        <img class="shadow_demo-image shadow_demo-image_box_shadow" src="./img/deadpool-1.png" alt="Deadpool"> </div>
+      <div class="half">
+        <h3>filter: drop-shadow</h3>
+        <div class="shadow_demo-tooltip shadow_demo-filter_shadow"> Look at my shadow </div>
+        <img class="shadow_demo-image shadow_demo-image_filter_shadow" src="./img/deadpool-1.png" alt="Deadpool"> </div>
+    </section>
+    <section class="slide">
+      <h2>drop-shadow</h2> <pre>
+		<code>.drop-shadow {</code>
+		<code>	filter: drop-shadow(0px 0px 10px rgba(0,0,0,.5));</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <h2 class="shout">CSS Variables</h2>
+    </section>
+    <section class="slide"> <pre>
+		<code>.button:before {</code>
+		<code>	left: var(--x);</code>
+		<code>	top: var(--y);</code>
+		<code>}</code>
+		<code>	</code>
+		<code>$('body').on('mousemove', '.button', (e) => {</code>
+		<code>	let x = e.pageX - e.target.offsetLeft;</code>
+		<code>	let y = e.pageY - e.target.offsetTop;</code>
+		<code>	$(e.target).css({'--x': x+'px', '--y': y+'px' });</code>
+		<code>});</code>
+	</pre> </section>
+    <section class="slide">
+      <iframe class="all_screen_iframe" src="variable_demo.html"></iframe>
+    </section>
+    <section class="slide">
+      <h2 class="shout">Vertical Text</h2>
+    </section>
+    <section class="slide">
+      <br> <pre>
+		<code>p {</code>
+		<code>	writing-mode: tb-rl;</code>
+		<code>	transform: scale(-1);</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide vertical_text_demo">
+      <div class="half">
+        <h3>writing-mode: tb-rl</h3>
+        <p class="text-t-b"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam id debitis aperiam expedita magni esse. </p>
+      </div>
+      <div class="half">
+        <h3> writing-mode: tb-rl
+          <br> transform: scale(-1) </h3>
+        <p class="text-b-t"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam id debitis aperiam expedita magni esse. </p>
+      </div>
+    </section>
+    <section class="slide">
+      <h2 class="shout">Browser Behavior</h2>
+    </section>
+    <!-- <section class="slide">
+	<iframe class="all_screen_iframe" src="https://s.codepen.io/alukard/debug/GOzOYR/LDAmdPbLDnZr"></iframe>
+</section> -->
+    <section class="slide">
+      <iframe class="all_screen_iframe" src="smooth_scroll_demo.html"></iframe>
+    </section>
+    <section class="slide">
+      <h2>Smooth Scrolling CSS</h2> <pre>
+		<code>.scroll-block {</code>
+		<code>	scroll-behavior: smooth;</code>
+		<code>	overflow: auto;</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <h2>Smooth Scrolling JS</h2> <pre>
+		<code>window.scroll({</code>
+		<code>	top: 2500,</code>
+		<code>	left: 0,</code>
+		<code>	behavior: 'smooth'</code>
+		<code>});</code>
+	</pre> </section>
+    <section class="slide">
+      <iframe class="cover-frame" scrolling='no' src='https://s.codepen.io/alukard/debug/OgKjmo/bZMQWNLnwPzA' frameborder='no' allowtransparency='true' allowfullscreen='true' style='width: 100%;'> </iframe>
+    </section>
+    <section class="slide">
+      <h2>Disable Elements events</h2> <pre>
+		<code>.map-cover {</code>
+		<code>	pointer-events: none;</code>
+		<code>	touch-events: none;</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <h2 class="shout">Parallax</h2>
+    </section>
+    <section class="slide">
+      <iframe class="all_screen_iframe" src="https://googlechromelabs.github.io/ui-element-samples/parallax/"></iframe>
+    </section>
+    <section class="slide"> <pre>
+		<code>.container {</code>
+		<code>	overflow-x: hidden</code>
+		<code>	overflow-y: scroll;</code>
+		<code>	perspective: 1px;</code>
+		<code>	perspective-origin: 0 0;</code>
+		<code>}</code>
+		<code> </code>
+		<code>.parallax-child {</code>
+		<code>	transform-origin: 0 0;</code>
+		<code>	transform: translateZ(-2px) scale(3);</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide link-slide">
+      <h2>Performant Parallaxing</h2>
+      <img style="max-height: 55%;" src="./img/parallax.jpg" alt="parallax">
+      <br>
+      <p>
+        <a class="link-slide_link" target="_blank" href="https://developers.google.com/web/updates/2016/12/performant-parallaxing">https://goo.gl/NeSh9m</a>
+      </p>
+    </section>
+    <section class="slide">
+      <h2 class="shout">calc()</h2>
+    </section>
+    <section class="slide">
+      <h2>Minimal font size with calc()</h2> <pre>
+		<code>p {</code>
+		<code>	font-size: calc(16px + 2vw);</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <h2>Query block width with calc()</h2>
+      <br> <pre>
+		<code>.block {</code>
+		<code>	display: inline-block;</code>
+		<code>	min-width: 50%;</code>
+		<code>	max-width: 100%;</code>
+		<code>	width: calc((600px - 100%) * 600);</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <br>
+      <br> <pre>
+		<code>/* When parent is 500px wide... */</code>
+		<code></code>
+		<code>.block {</code>
+		<code>	min-width: 50%;   /* 250px WINNER */</code>
+		<code>	max-width: 100%;  /* 500px */</code>
+		<code>	width: calc(480px - 100%) * 480); /* -9600px */</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <br>
+      <br> <pre>
+		<code>/* When parent is 400px wide... */</code>
+		<code>.block {</code>
+		<code>	min-width: 50%;  /* 200px */</code>
+		<code>	max-width: 100%; /* 400px WINNER */</code>
+		<code>	width: calc(480px - 100%) * 480); /* 38400px */</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide">
+      <div class="device_resize_frame-wrap">
+        <div class="device_resize_frame">
+          <div class="device_resize_frame-content"> Here mast be example.
+            <iframe scrolling="no" width="100%" height="100%" src="./css_lock-exmp_1.html"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="slide">
+      <h2>Outlook hack</h2> <pre>
+		<code>.block {</code>
+		<code>	width: calc(360000px - 60000%);</code>
+		<code>}</code>
+	</pre> </section>
+    <section class="slide link-slide">
+      <div class="half contacts">
+        <p class="name">Oleksandr Pavlyshch</p>
+        <p class="twitter">
+          <a href="https://twitter.com/lokdawn80" class="default_link">@lokdawn80</a>
+        </p>
+        <p class="email">
+          <a href="mailto:lokdawn80@gmail.com" class="default_link">lokdawn80@gmail.com</a>
+        </p>
+        <p class="skype">
+          <a href="skype:oleksandr.pavlishch?call" class="default_link">oleksandr.pavlishch</a>
+        </p>
+      </div>
+      <img class="half" src="img/presentation_qr_code.svg" alt="resentation_qr_code">
+      <p>
+        <a class="link-slide_link https" href="https://oleksandrpavlyshch.github.io/css_triks_you_gotta_love/"> https://goo.gl/ypxHNL </a>
+      </p>
+    </section>
+    <!-- END content -->
+    <div class="progress"></div>
+    <p class="badge">
+      <a href="https://github.com/OleksandrPavlyshch">Fork me on GitHub</a>
+    </p>
+    <!-- BEGIN scripts -->
+    <!-- bower:js -->
+    <script src="js/vendor/jquery.js"></script>
+    <!-- endbower -->
+    <script type="text/javascript" src="js/vendor/shower.min.js"></script>
+    <script type="text/javascript" src="js/vendor/highlight.pack.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <!-- END scripts -->
+  </body>
+</html>
