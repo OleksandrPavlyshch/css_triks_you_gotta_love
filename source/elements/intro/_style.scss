@@ -1,4 +1,15 @@
 .intro {
 	background-image: url("../img/lemur-page.gif");
 	background-size: cover;
+	&-header {
+		padding-top: 20px;
+		color: $white;
+		font-size: 86px;
+		line-height: 1.4;
+		text-shadow: 
+			7px 2px 5px $black, 
+			2px 2px 7px $black, 
+			0px 0px 6px $black;
+
+	}
 }
