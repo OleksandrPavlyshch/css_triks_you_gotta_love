@@ -21,7 +21,7 @@ const onlyFaviconFilter = filter(['**', '!' + htmlName + '.html'], {restore: tru
 			, developerName: appName
 			, developerURL: appName
 			, background: 'transpatent'
-			, path: '' //http://example.com/favicon'
+			, path: './favicon/' //http://example.com/favicon'
 			, url: appName
 			, display: 'standalone'
 			, orientation: 'portrait'
