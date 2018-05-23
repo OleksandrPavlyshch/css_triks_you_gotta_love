@@ -2,42 +2,42 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#fff">
-    <meta name="format-detection" content="telephone=no">
-    <!-- bower:css -->
-    <!-- endbower -->
-    {% include "../partials/_media-tags.html" %}
-    {% include "../partials/_favicons.html" %}
+	<meta charset="utf-8">
+	<title>{% if title %}{{ title }}{% else %}Template{% endif %}</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="theme-color" content="#fff">
+	<meta name="format-detection" content="telephone=no">
+	<!-- bower:css -->
+	<!-- endbower -->
+	{% include "../partials/_media-tags.html" %}
+	{% include "../partials/_favicons.html" %}
 
-    <link rel="stylesheet" media="all" href="css/vendor/screen-16x10.css">
-    <link rel="stylesheet" media="all" href="css/vendor/default.css">
-    <link rel="stylesheet" media="all" href="css/screen.css">
+	<link rel="stylesheet" media="all" href="css/vendor/screen-16x10.css">
+	<link rel="stylesheet" media="all" href="css/vendor/default.css">
+	<link rel="stylesheet" media="all" href="css/screen.css">
   </head>
   <body class="shower list">
 
-    <!-- BEGIN content -->
-    {% block content %}{% endblock %}
-    <!-- END content -->
+	<!-- BEGIN content -->
+	{% block content %}{% endblock %}
+	<!-- END content -->
 
 
 
-    <div class="progress"></div>
-    <p class="badge">
-        <a href="https://github.com/OleksandrPavlyshch">Fork me on GitHub</a>
-    </p>
+	<div class="progress"></div>
+	<p class="badge">
+		<a target="_blank" href="https://github.com/OleksandrPavlyshch">Fork me on GitHub</a>
+	</p>
 
-    <!-- BEGIN scripts -->
-    <!-- bower:js -->
-    <script src="js/vendor/jquery.js"></script>
-    <!-- endbower -->
-    <script type="text/javascript" src="js/vendor/shower.min.js"></script>
-    <script type="text/javascript" src="js/vendor/highlight.pack.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
-    <!-- END scripts -->
+	<!-- BEGIN scripts -->
+	<!-- bower:js -->
+	<script src="js/vendor/jquery.js"></script>
+	<!-- endbower -->
+	<script type="text/javascript" src="js/vendor/shower.min.js"></script>
+	<script type="text/javascript" src="js/vendor/highlight.pack.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<!-- END scripts -->
 
   </body>
 </html>
