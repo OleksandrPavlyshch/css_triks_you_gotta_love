@@ -166,9 +166,34 @@ h3 {
   touch-action: none;
 }
 
+.active .device_resize_frame-content.is-auto-resize {
+  -webkit-animation: resize-frame 2.5s linear 1s alternate;
+  animation: resize-frame 2.5s linear 1s alternate;
+  -webkit-animation-iteration-count: 2;
+  animation-iteration-count: 2;
+}
+
 .device_resize_frame-wrap {
   text-align: center;
   height: calc(100% - 40px);
+}
+
+@-webkit-keyframes resize-frame {
+  0% {
+    width: 870px;
+  }
+  100% {
+    width: 270px;
+  }
+}
+
+@keyframes resize-frame {
+  0% {
+    width: 870px;
+  }
+  100% {
+    width: 270px;
+  }
 }
 
 .all_screen_iframe {
