@@ -59,9 +59,18 @@ h3
 			right: -1px
 			pointer-events: none
 			touch-action: none
+		.active &.is-auto-resize
+			animation: resize-frame 2.5s linear 1s alternate
+			animation-iteration-count: 2
 	&-wrap
 		text-align: center
 		height: calc(100% - 40px)
+
+@keyframes resize-frame
+	0%
+		width: 870px
+	100%
+		width: 270px
 
 .all_screen_iframe
 	position: absolute
