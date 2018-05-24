@@ -36,19 +36,23 @@
 	&-left_col {
 		min-width: 33%;
 		max-width: 100%;
-		width: calc((600px - 100%) * 600);
+		width: calc((480px - 100%) * 480);
 	}
 	&-right_col {
-		min-width: 66%;
+		min-width: 67%;
 		max-width: 100%;
-		width: calc((600px - 100%) * 600);
+		padding-right: 10px;
+		width: calc((480px - 100%) * 480);
 		&-one,
 		&-two {
 			float: left;
-			min-width: 49%;
+			min-width: 48%;
 			max-width: 100%;
-			margin-right: 1%;
-			width: calc((380px - 100%) * 380);
+			margin:0 1%;
+			width: calc((480px - 100%) * 480);
+		}
+		&-two {
+			margin-right: 0 !important;
 		}
 	}
 }
