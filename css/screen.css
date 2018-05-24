@@ -581,6 +581,46 @@ input[type="submit"] {
   width: calc((600px - 100%) * 600);
 }
 
+.calc_media_demo {
+  overflow: hidden;
+}
+
+.calc_media_demo-text {
+  font-size: 16px !important;
+}
+
+.calc_media_demo-image_placeholder {
+  margin-bottom: 15px;
+  border: 1px solid #000000;
+  height: 150px;
+  background: linear-gradient(to top right, transparent calc(50% - 1px), gray calc(50% - 1px), gray calc(50% + 1px), transparent calc(50% + 1px)), linear-gradient(to bottom right, transparent calc(50% - 1px), gray calc(50% - 1px), gray calc(50% + 1px), transparent calc(50% + 1px));
+}
+
+.calc_media_demo-left_col, .calc_media_demo-right_col {
+  float: left;
+  padding: 5px;
+}
+
+.calc_media_demo-left_col {
+  min-width: 33%;
+  max-width: 100%;
+  width: calc((600px - 100%) * 600);
+}
+
+.calc_media_demo-right_col {
+  min-width: 66%;
+  max-width: 100%;
+  width: calc((600px - 100%) * 600);
+}
+
+.calc_media_demo-right_col-one, .calc_media_demo-right_col-two {
+  float: left;
+  min-width: 49%;
+  max-width: 100%;
+  margin-right: 1%;
+  width: calc((380px - 100%) * 380);
+}
+
 .intro {
   background-image: url("../img/lemur-page.gif");
   background-size: cover;
